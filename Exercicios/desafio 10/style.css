@@ -1,0 +1,151 @@
+/* Default styles */
+@charset "UTF-8";
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+
+:root{
+    --co0 
+    --co2 
+    --co4
+    --co5
+    --co6
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif;
+
+    --fonte-destaque: 'bebas neve', cursive ;
+}
+
+*{
+    margin: 0px;
+    padding: opx;
+}
+
+
+body {
+    background-color: rgb(217, 243, 217);
+}
+
+header {
+    background-color: rgb(62, 211, 147);
+    height: 25%;
+    padding: 12px;
+}
+
+.cabeçalho {
+    text-align: center;
+    color: white;
+}
+
+button {
+    background-color: rgb(219, 244, 244);
+    border-radius: 4%;
+    margin: 5px;
+    padding: 8px;
+    border: 1px black solid;
+    box-shadow: 4px 4px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(16, 172, 105);
+    font-weight: bold;
+}
+
+.corpo1 {
+    min-width: 300px;
+    max-width: 100px;
+    margin: 0px 216px;
+    background-color: rgba(202, 198, 198, 0.387);
+}
+
+.h1p {
+    font-family: idroid;
+    background-color: rgb(16, 172, 105);
+}
+
+h2 {
+    font-family: idroid;
+}
+
+.img1 {
+    margin: 0px 50px;
+}
+
+.img2 {
+    margin: 0px 50px;
+}
+
+.img3 {
+    margin: 0px 300px;
+}
+
+.cvideo {
+    background-color: rgb(16, 172, 105);
+    margin: 0px 216px;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+iframe {
+    margin: 26px 170px;
+    position: absolute;
+}
+
+.corpo2 {
+    margin: 0px 216px;
+    background-color: rgb(255, 252, 252);
+    border-radius: 20px;
+}
+
+.tabela {
+    background-color: rgba(62, 211, 146, 0.276);
+    margin: 20px 20px;
+}
+
+.cabeçalho2 {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5%;
+    font-weight: bolder;
+}
+
+ul {
+    
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    /* Adjust margins for smaller screens */
+    .corpo1, .cvideo, .corpo2, .tabela {
+        margin: 0px 20px;
+    }
+
+    /* Center images for smaller screens */
+    .img1, .img2, .img3 {
+        margin: 0px auto;
+    }
+
+    /* Make header height smaller */
+    header {
+        height: 15%;
+    }
+
+    /* Adjust font size for smaller screens */
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    /* Hide the iframe for smaller screens */
+    iframe {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjust font size for even smaller screens */
+    h1, h2 {
+        font-size: 20px;
+    }
+}
