@@ -7,14 +7,23 @@
     <title>Alinhamento vertifical</title>
     <style>
         #conteiner{
-            height: 500px;
+            position: relative;
+        
+            height: 96vh;
             background-color: purple;
             padding: 10px;
         }
 
         #conteudo{
+            position: absolute;
             height: 200px;
+            width: 400px;
+            left: 50%;
+            top: 50%px;
             background-color: yellow;
+
+            transform: translate(20px,20px);
+            
 
         }
     </style>
